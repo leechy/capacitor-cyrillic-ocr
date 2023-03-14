@@ -15,7 +15,7 @@ npx cap sync
 
 ## iOS
 
-You don't have to do anything for iOS. It is possible that you will need to add some description in the `Info.plist` file, if you want to get the image from the camera or the filesystem, but it's not required for this plugin to work.
+You don't have to do anything for iOS.
 
 ## Android
 
@@ -91,8 +91,8 @@ console.log(result);
 
 <docgen-index>
 
-- [`recognize(...)`](#recognize)
-- [Interfaces](#interfaces)
+* [`recognize(...)`](#recognize)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
@@ -111,9 +111,11 @@ recognize(options: CapacitorOCROptions) => Promise<CapacitorOCRResult[]>
 
 **Returns:** <code>Promise&lt;CapacitorOCRResult[]&gt;</code>
 
----
+--------------------
+
 
 ### Interfaces
+
 
 #### CapacitorOCRResult
 
@@ -122,6 +124,7 @@ recognize(options: CapacitorOCROptions) => Promise<CapacitorOCRResult[]>
 | **`text`**       | <code>string</code>             |
 | **`lines`**      | <code>CapacitorOCRLine[]</code> |
 | **`confidence`** | <code>number</code>             |
+
 
 #### CapacitorOCRLine
 
@@ -132,6 +135,7 @@ recognize(options: CapacitorOCROptions) => Promise<CapacitorOCRResult[]>
 | **`words`**      | <code>CapacitorOCRWord[]</code>                               |
 | **`confidence`** | <code>number</code>                                           |
 
+
 #### CapacitorOCRBBox
 
 | Prop     | Type                |
@@ -141,6 +145,7 @@ recognize(options: CapacitorOCROptions) => Promise<CapacitorOCRResult[]>
 | **`x1`** | <code>number</code> |
 | **`y1`** | <code>number</code> |
 
+
 #### CapacitorOCRWord
 
 | Prop             | Type                                                          |
@@ -148,6 +153,7 @@ recognize(options: CapacitorOCROptions) => Promise<CapacitorOCRResult[]>
 | **`text`**       | <code>string</code>                                           |
 | **`bbox`**       | <code><a href="#capacitorocrbbox">CapacitorOCRBBox</a></code> |
 | **`confidence`** | <code>number</code>                                           |
+
 
 #### CapacitorOCROptions
 
