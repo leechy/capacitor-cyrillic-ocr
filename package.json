@@ -1,6 +1,6 @@
 {
   "name": "capacitor-cyrillic-ocr",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "OCR plugin with Cyrillic support (MLKit Vision on iOS and Tesseract4Android)",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
